@@ -1,6 +1,7 @@
 body {
-    background-image: url(/pexels-hasan-albari-1229861.jpg);
+    background-image: url(/background-images/pexels-cup-of-couple-8014287.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -8,7 +9,7 @@ body {
 }
 
 .menu-bar {
-    background: rgb(233, 113, 14);
+    background: #e9710e;
     text-align: center;
 }
 
@@ -20,11 +21,74 @@ body {
 
 .menu-bar ul li {
     width: 120px;
-    margin: 5px;
-    padding: 5px;
+    margin: 15px;
+    padding: 15px;
 }
 
 .menu-bar ul li a {
     text-decoration: none;
     color: white;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: #f49241;
+    border-radius: 3px;
+
+}
+
+.menu-bar .fa {
+    margin-right: 8px;
+}
+
+.sub-menu {
+    display: none;
+    overflow: hidden;
+}
+
+.menu-bar ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background: #e9710e;
+    margin-top: 15px;
+    margin-left: -15px;
+
+
+}
+
+.menu-bar ul li:hover .sub-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+.menu-bar ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu ul li a:hover {
+    color: white;
+}
+
+.fa {
+    float: right;
+
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+    display: block;
+    position: relative;
 }
