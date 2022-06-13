@@ -1,0 +1,30 @@
+body {
+    background-image: url(/pexels-hasan-albari-1229861.jpg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.menu-bar {
+    background: rgb(233, 113, 14);
+    text-align: center;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: inline-flex;
+    color: white;
+}
+
+.menu-bar ul li {
+    width: 120px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: white;
+}
